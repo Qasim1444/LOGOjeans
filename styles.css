@@ -1,0 +1,101 @@
+body
+{
+    margin-left: auto;
+    margin-right: auto;
+    max-width:1200px;
+}
+
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    height: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+    transition: 0.3s;
+}
+
+/* Container styles */
+.container {
+    padding: 16px;
+}
+
+.display-container {
+    position: relative;
+}
+
+/* Logo text */
+.logo-text {
+    letter-spacing: 4px;
+    margin: 10px 0;
+}
+
+/* Navigation items */
+.nav-item {
+    width: 100%;
+    display: block;
+    padding: 8px 16px;
+    text-align: left;
+    border: none;
+    white-space: normal;
+    text-decoration: none;
+}
+
+/* Button styles */
+.button:hover {
+    background-color: #f1f1f1;
+    color: #000;
+}
+
+/* Text colors */
+.text-grey {
+    color: #757575;
+}
+
+/* Padding utility */
+.padding-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.padding {
+    padding: 8px 16px;
+}
+
+.padding-large {
+    padding: 12px 24px;
+}
+
+/* Medium text size */
+.medium {
+    font-size: 15px;
+}
+
+/* Hide class */
+.hide {
+    display: none;
+}
+
+/* Light grey background */
+.light-grey {
+    background-color: #f1f1f1;
+}
+
+/* Close button */
+.display-topright {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Font Awesome icons margin */
+.fa-caret-right.margin-right {
+    margin-right: 16px;
+}
+
+/* Responsive hide for large screens */
+@media (min-width: 993px) {
+    .hide-large {
+        display: none !important;
+    }
+}
