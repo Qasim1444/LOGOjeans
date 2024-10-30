@@ -2,6 +2,8 @@ body
 {
    margin: 0;
     max-width:1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -40,7 +42,7 @@ body
 .nav-item {
     width: 100%;
     display: block;
-    padding: 8px 16px;
+    padding: 12px 16px;
     text-align: left;
     border: none;
     white-space: normal;
@@ -51,14 +53,14 @@ body
 
 /* Button styles */
 .button:hover {
-    background-color: #f1f1f1;
+    background-color: #CCCCCC;
     color: #000;
 }
 
 
 /* Padding utility */
 .list {
-    padding-top: 64px !important;
+    padding-top: 73px !important;
     padding-bottom: 64px !important;
     color: #757575;
     font-weight: bold;
@@ -66,7 +68,7 @@ body
 }
 
 .padding {
-    padding: 8px 16px;
+    padding: 13px 16px;
 }/* Light grey background */
 .light-grey {
     background-color: #f1f1f1;
@@ -80,3 +82,49 @@ body
         display: none !important;
     }
 }
+
+
+/* nav end */
+
+/* Header styles */
+.container {
+    padding: 0.01em 16px;
+ margin-top: 8px;
+    font-size: 24px;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+        font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+
+}
+
+
+.left {
+    float: left;
+    margin: 0;
+}
+
+.right {
+    float: right;
+    margin: 0;
+}
+
+/* Icon styles */
+.fa {
+    display: inline-block;
+    cursor: pointer;
+    font: normal normal normal 20px / 1 FontAwesome;
+
+}
+
+.fa:hover {
+    color: #666;
+}
+
+.margin-right {
+    margin-right: 16px;
+}
+
+/* Clear float after the header */
+
