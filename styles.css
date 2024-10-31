@@ -212,82 +212,71 @@ body
 
 /* picgride */
 
-
-
-.w3-row {
+.row {
   display: flex;
-  flex-wrap: wrap;
-  margin: -10px; /* Adjusts spacing between columns */
+  
 }
 
-.w3-col {
-  padding: 10px; /* Space around each column */
-  flex: 1; /* Equal width for all columns */
-  min-width: 240px; /* Minimum width for responsiveness */
+/* Create three equal columns that sits next to each other */
+.column {
+
+  padding:0  16px;
 }
 
-.w3-container {
-  border: 1px solid #ddd; /* Light border around containers */
-  border-radius: 5px; /* Rounded corners */
-  overflow: hidden; /* Hides overflow content */
-  position: relative; /* For absolute positioning of tags */
-  background-color: white; /* White background for containers */
-}
-
-.w3-container img {
-  width: 100%; /* Ensures images are responsive */
-  border-bottom: 1px solid #ddd; /* Divider between image and text */
-}
-
-.w3-container p {
-  padding: 10px;
-  text-align: center; /* Center align text */
-}
-
-.w3-tag {
-  background-color: #ff0000; /* Tag background color */
-  color: white; /* Tag text color */
-  padding: 5px 10px;
-  border-radius: 3px; /* Rounded corners for tags */
-  font-weight: bold;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-}
-
-.w3-display-container {
+.containertext {
   position: relative;
+  text-align: center;
+  color: white;
+}
+.top-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
 
-.w3-display-middle {
+
+.centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: none; /* Hide by default */
+  color: #fff !important;
+    background-color: #000 !important;
+    border: none;
+    display: none; /* Hide by default */
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    text-transform: none;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+    font-family: "Montserrat", sans-serif;
+}
+#fa {
+  display: inline-block;
+  font: normal normal normal 14px / 1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  padding-left: 5px;
+}
+.containertext:hover .centered {
+  display: inline-block; /* Show on hover */
 }
 
-.w3-container:hover .w3-display-middle {
-  display: block; /* Show on hover */
+.gridep
+{
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
 }
-
-.w3-button {
-  padding: 10px 15px;
-  background-color: #000; /* Button background color */
-  color: white; /* Button text color */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer on hover */
-}
-
-.w3-button:hover {
-  background-color: #444; /* Darker shade on hover */
-}
-
-/* Sale price styling */
-.w3-text-red {
-  color: red; /* Red color for sale prices */
-  font-weight: bold;
-}
-
-  
