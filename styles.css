@@ -214,13 +214,15 @@ body
 
 .row {
   display: flex;
-  
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */  
 }
 
 /* Create three equal columns that sits next to each other */
 .column {
-
-  padding:0  16px;
+  flex: 25%; /* Each column takes 25% width (4 columns) */
+  max-width: 25%;
+  padding: 0 16px;
+  box-sizing: border-box;
 }
 
 .containertext {
@@ -280,3 +282,24 @@ body
   font-size: 15px;
   line-height: 1.5;
 }
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%; /* 2 columns on medium screens */
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 50%; /* 2 columns on medium screens */
+    max-width: 50%;
+  }
+}
+
+/* Ensure images are responsive */
+.column img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+  
