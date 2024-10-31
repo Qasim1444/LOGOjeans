@@ -207,3 +207,87 @@ body
       display: none !important;
     }
   }
+
+
+
+/* picgride */
+
+
+
+.w3-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px; /* Adjusts spacing between columns */
+}
+
+.w3-col {
+  padding: 10px; /* Space around each column */
+  flex: 1; /* Equal width for all columns */
+  min-width: 240px; /* Minimum width for responsiveness */
+}
+
+.w3-container {
+  border: 1px solid #ddd; /* Light border around containers */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Hides overflow content */
+  position: relative; /* For absolute positioning of tags */
+  background-color: white; /* White background for containers */
+}
+
+.w3-container img {
+  width: 100%; /* Ensures images are responsive */
+  border-bottom: 1px solid #ddd; /* Divider between image and text */
+}
+
+.w3-container p {
+  padding: 10px;
+  text-align: center; /* Center align text */
+}
+
+.w3-tag {
+  background-color: #ff0000; /* Tag background color */
+  color: white; /* Tag text color */
+  padding: 5px 10px;
+  border-radius: 3px; /* Rounded corners for tags */
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.w3-display-container {
+  position: relative;
+}
+
+.w3-display-middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none; /* Hide by default */
+}
+
+.w3-container:hover .w3-display-middle {
+  display: block; /* Show on hover */
+}
+
+.w3-button {
+  padding: 10px 15px;
+  background-color: #000; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.w3-button:hover {
+  background-color: #444; /* Darker shade on hover */
+}
+
+/* Sale price styling */
+.w3-text-red {
+  color: red; /* Red color for sale prices */
+  font-weight: bold;
+}
+
+  
